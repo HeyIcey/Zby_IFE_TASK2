@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>界面拖拽交互</title>
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.drag-wrapper{
+			border: 1px solid red;
+			padding: 40px 80px;
+			width: 980px;
+			margin: 20px auto;
+			overflow: hidden;
+		}
+		.boxLeft{
+			width: 300px;
+			height: 400px;
+			background: #92C0EF;;
+			float: left;
+		}
+		.boxRight{
+			width: 300px;
+			height: 400px;
+			background: #92C0EF;;
+			float: right;
+		}
+		.group{
+			position: relative;
+			display: inline-block;
+			box-sizing: border-box;
+			width: 300px;
+			height: 40px;
+			border: 1px solid #000;
+			background: #47456D;;
+			color: #fff;
+			text-align: center;
+			line-height: 40px;
+			font-size: 20px;
+			font-weight: bold;
+			margin: -1px;
+		}
+		.group:hover{
+			cursor: move;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="header-wrap">
+			<h1 class="logo"><a href="index.html">HeyIcey</a></h1>
+			<nav>
+				<ul>
+					<li><a href="task0002_1.html" >小练习1</a></li>
+					<li><a href="task0002_2.html" >小练习2</a></li>
+					<li><a href="task0002_3.html" >小练习3</a></li>
+					<li><a href="task0002_4.html" >小练习4</a></li>
+					<li><a href="task0002_5.html">小练习5</a></li>
+				</ul>
+			</nav>
+		</div>
+		<a class="header-github" href="https://github.com/HeyIcey" target="_blank"><img src="img/icon-github.png" alt="github picture"></a>
+	</header>
+	<div class="drag-wrapper">
+		<div class="boxLeft">
+			<span class="group">1</span>
+			<span class="group">2</span>
+			<span class="group">3</span>
+			<span class="group">4</span>
+			<span class="group">5</span>
+		</div>
+		<div class="boxRight">
+			<span class="group">6</span>
+			<span class="group">7</span>
+			<span class="group">8</span>
+			<span class="group">9</span>
+			<span class="group">10</span>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/task0002_5.js"></script>
+</body>
+</html>

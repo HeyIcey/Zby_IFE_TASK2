@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+    .rotation-wrapper {
+        position: relative;
+        width: 600px;
+        height: 380px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+    
+    .banner {
+        position: absolute;
+        width: 4800px;
+        height: 380px;
+        font-size: 0;
+    }
+    
+    .banner img {
+        width: 600px;
+        height: 380px;
+    }
+    
+    .list {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 0;
+    }
+    
+    .list span {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin-right: 10px;
+        border: 1px solid #a0a;
+        cursor: pointer;
+    }
+    
+    .on {
+        background: #a0a;
+    }
+    
+    .arrow {
+        display: none;
+        position: absolute;
+        background: rgba(0, 0, 0, .3);
+        font-size: 38px;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        top: 180px;
+    }
+    
+    #next {
+        right: 0;
+    }
+    
+    .rotation-wrapper:hover .arrow {
+        display: block;
+    }
+    
+    .arrow:hover {
+        background: rgba(0, 0, 0, .7);
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-wrap">
+            <h1 class="logo"><a href="index.html">HeyIcey</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="task0002_1.html">小练习1</a></li>
+                    <li><a href="task0002_2.html">小练习2</a></li>
+                    <li><a href="task0002_3.html">小练习3</a></li>
+                    <li><a href="task0002_4.html">小练习4</a></li>
+                    <li><a href="task0002_5.html">小练习5</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a class="header-github" href="https://github.com/HeyIcey" target="_blank"><img src="img/icon-github.png" alt="github picture"></a>
+    </header>
+    <div class="rotation-wrapper">
+        <div class="banner" style="left:-600px;">
+            <img src="img/6.jpg">
+            <img src="img/1.jpg">
+            <img src="img/2.jpg">
+            <img src="img/3.jpg">
+            <img src="img/4.jpg">
+            <img src="img/5.jpg">
+            <img src="img/6.jpg">
+            <img src="img/1.jpg">
+        </div>
+        <div class="list">
+            <span index='1' class="on"></span>
+            <span index='2'></span>
+            <span index='3'></span>
+            <span index='4'></span>
+            <span index='5'></span>
+            <span index='6'></span>
+        </div>
+        <a href="#" id="prev" class="arrow">&lt;</a>
+        <a href="#" id="next" class="arrow">&gt;</a>
+    
+    </div>
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/task0002_3.js"></script>
+</body>
+
+</html>
